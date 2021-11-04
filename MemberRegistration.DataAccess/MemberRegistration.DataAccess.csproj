@@ -46,12 +46,11 @@
   <ItemGroup>
     <Compile Include="Abstract\IMemberDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfMemberDal.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\MemberMap.cs" />
     <Compile Include="Concrete\EntityFramework\MembershipContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\EntityFramework\Mappings\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DevFramework.Core\DevFramework.Core.csproj">
       <Project>{E8103FDF-3BEC-4867-9679-7263A0B7A5B8}</Project>
