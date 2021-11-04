@@ -45,7 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Concrete\" />
+    <Folder Include="Concrete\EntityFramework\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DevFramework.Core\DevFramework.Core.csproj">
