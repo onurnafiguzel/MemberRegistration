@@ -94,7 +94,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ValidationRules\" />
+    <Folder Include="ValidationRules\FluentValidation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
