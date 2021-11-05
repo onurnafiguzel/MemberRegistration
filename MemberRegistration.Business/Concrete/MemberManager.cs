@@ -3,6 +3,8 @@ using MemberRegistration.Business.ServiceAdapters;
 using MemberRegistration.DataAccess.Abstract;
 using MemberRegistration.Entities.Concrete;
 using System;
+using DevFramework.Core.Aspects.Postsharp.ValidationAspects;
+using MemberRegistration.Business.ValidationRules.FluentValidation;
 
 namespace MemberRegistration.Business.Concrete
 {
@@ -17,6 +19,7 @@ namespace MemberRegistration.Business.Concrete
             _kpsService = kpsService;
         }
 
+        [FluentValidationAspect(typeof(MemberValidator))]
         public void Add(Member member)
         {
             if (_kpsService.ValidateUser(member) == false)
