@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MemberRegistration.Business\MemberRegistration.Business.csproj">
+      <Project>{7402EE56-74B7-49DB-B008-028D8A89BE12}</Project>
+      <Name>MemberRegistration.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MemberRegistration.Entities\MemberRegistration.Entities.csproj">
+      <Project>{5E841126-4C2F-4344-A5B5-59F12DB92AB7}</Project>
+      <Name>MemberRegistration.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
