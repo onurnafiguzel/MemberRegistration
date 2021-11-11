@@ -8,8 +8,69 @@
     <title>Add</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body>
-    <div>
+<body class="bg-light">
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                <h2>Kayıt Formu</h2>
+                <p class="lead">Lütfen bilgilerinizi siliniz.</p>
+            </div>
+
+            <div class="row g-5">
+
+                <div class="col-md-12 col-md-1">
+                    <h4 class="mb-3">Bilgileriniz</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Adınız</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" value="">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Soyadınız</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="tcNo" class="form-label">Tc Kimlik numaranız</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text"></span>
+                                    <input type="text" class="form-control" id="tcNo" name="tcNo" placeholder="Tc Kimlik numarası">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Doğum tarihiniz</label>
+                                <input type="text" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="19/07/1907">
+
+                            </div>
+
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Kayıt Ol</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2017–2021 Company Name</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
