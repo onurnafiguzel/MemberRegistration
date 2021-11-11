@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MemberRegistration.Entities.Concrete;
+using MemberRegistration.MvcWebUI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,13 @@ namespace MemberRegistration.MvcWebUI.Controllers
         // GET: Member
         public ActionResult Add()
         {
-            return View();
+            return View(new MemberAddViewModel());
+        } 
+        
+        [HttpPost]
+        public ActionResult Add(Member member)
+        {
+            return View(new MemberAddViewModel());
         }
     }
 }
