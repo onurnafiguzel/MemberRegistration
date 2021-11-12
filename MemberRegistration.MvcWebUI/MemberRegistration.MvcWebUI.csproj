@@ -181,6 +181,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MemberRegistration.Business\MemberRegistration.Business.csproj">
+      <Project>{7402EE56-74B7-49DB-B008-028D8A89BE12}</Project>
+      <Name>MemberRegistration.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MemberRegistration.Entities\MemberRegistration.Entities.csproj">
       <Project>{5E841126-4C2F-4344-A5B5-59F12DB92AB7}</Project>
       <Name>MemberRegistration.Entities</Name>
